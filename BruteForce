@@ -1,1 +1,18 @@
+import random
+import string
 
+def brute_force(password):
+    attempts = 0
+    while True:
+        guess = ''.join(random.choices(string.ascii_letters + string.digits, k = len(password)))
+        attempts += 1
+        if guess == password:
+            return attempts
+            
+password = input("Enter the password for brute force: ");
+
+print("Cracking password...");
+
+attempts = brute_force(password)
+
+print(f"The password was cracked in {attempts} attempts.")
