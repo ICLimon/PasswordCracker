@@ -1,4 +1,4 @@
 # PasswordCracker
 Cybersecurity Project
 
-Format
+Formatting is given prompt to user
